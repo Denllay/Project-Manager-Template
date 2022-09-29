@@ -1,0 +1,11 @@
+{
+  "cssTheme": "Minimal",
+  "enabledCssSnippets": [
+    "memo",
+    "journal",
+    "tags",
+    "kanban",
+    "quick_acess"
+  ],
+  "baseFontSize": 15.5
+}

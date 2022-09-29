@@ -1,0 +1,15 @@
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.journal-head {
+  margin: 10px 0 2px 0 !important;
+}
+
+.journal-task-list > span > ul {
+  margin: 5px 0 6px 0 !important;
+}
+
+.journal-result-group {
+  margin-left: 18.5px !important;
+}

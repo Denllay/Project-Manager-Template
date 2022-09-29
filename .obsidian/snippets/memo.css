@@ -1,0 +1,47 @@
+.common-tools-wrapper > .common-tools-container {
+  display: none !important;
+}
+
+.memo-editor-wrapper {
+  margin-top: 10px !important;
+}
+
+.common-editor-wrapper.memo-editor > .common-tools-wrapper {
+  justify-content: flex-end !important;
+}
+
+.common-editor-wrapper.memo-editor {
+  background-color: transparent !important;
+}
+.common-editor-wrapper.memo-editor > .rta > textarea:focus {
+  box-shadow: none;
+}
+
+.common-editor-wrapper.memo-editor > .rta > textarea {
+  height: 20px !important;
+}
+
+.memo-editor-wrapper {
+  background-color: #121212 !important;
+  border: none !important;
+}
+
+.common-editor-wrapper.memo-editor > .common-tools-wrapper .btns-container > .action-btn.confirm-btn {
+  background: #007bff !important;
+}
+.common-editor-wrapper.memo-editor > .common-tools-wrapper .btns-container > .action-btn.confirm-btn > .icon-text {
+  display: none !important;
+}
+
+.section-header-container.memos-header-container {
+  display: none !important;
+}
+
+.memo-wrapper {
+  border: none !important;
+  background: #121212 !important;
+}
+
+.memo-wrapper > .memo-top-wrapper > .memo-top-left-wrapper > .time-text {
+  color: #007bff !important;
+}

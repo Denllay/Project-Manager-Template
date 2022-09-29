@@ -1,0 +1,21 @@
+{
+  "new-note-folder": "400 - Tasks",
+  "new-note-template": "99 - Config/Templates/99 Task Template.md",
+  "new-card-insertion-method": "append",
+  "tag-colors": [],
+  "date-picker-week-start": 1,
+  "hide-tags-in-title": true,
+  "show-checkboxes": false,
+  "hide-tags-display": true,
+  "hide-date-in-title": true,
+  "metadata-keys": [
+    {
+      "metadataKey": "tags",
+      "label": "",
+      "shouldHideLabel": true,
+      "containsMarkdown": false
+    }
+  ],
+  "show-relative-date": true,
+  "hide-date-display": false
+}

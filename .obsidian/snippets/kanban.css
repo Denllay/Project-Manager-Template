@@ -1,0 +1,11 @@
+.kanban-plugin__meta-row {
+  background: transparent !important;
+}
+
+.kanban-plugin__meta-value-wrapper {
+  padding-left: 0 !important;
+}
+
+.tag.kanban-plugin__item-tag {
+  margin: 0 5px 0 0 !important;
+}

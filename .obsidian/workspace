@@ -1,0 +1,205 @@
+{
+  "main": {
+    "id": "bf0c5f0cfe10bd25",
+    "type": "split",
+    "children": [
+      {
+        "id": "10260ffaddc0ca7a",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "400 - Tasks/Test.md",
+            "mode": "preview",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8505ffe2987d7dad",
+    "type": "split",
+    "children": [
+      {
+        "id": "94711c57085f07d6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d97612461296df7b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "85df5dbfe6a375bd",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "88c44420dfb43d60",
+            "type": "leaf",
+            "state": {
+              "type": "file-tree-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "bc97219b8823a6bd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "7b7b48901f92390d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6fccd09c7bd94770",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "99 - Config/Components/99 Quick Acess.md",
+                "mode": "preview",
+                "source": false
+              },
+              "pinned": true
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 253
+  },
+  "right": {
+    "id": "3304353cb4989d92",
+    "type": "split",
+    "children": [
+      {
+        "id": "af7d893ad211aa24",
+        "type": "tabs",
+        "dimension": 47.362385321100916,
+        "children": [
+          {
+            "id": "857909d68da2197c",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "b323894aff6547ea",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          },
+          {
+            "id": "566ceaffbfd6af81",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c035b58f4f301080",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "400 - Tasks/Test.md"
+              }
+            }
+          },
+          {
+            "id": "99c8ef5f54a247c3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "400 - Tasks/Test.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0794e7e7b5993783",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "400 - Tasks/Test.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "1afc24071cbb58f6",
+        "type": "tabs",
+        "dimension": 52.637614678899084,
+        "children": [
+          {
+            "id": "80ef91d2d40e90da",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "memos_view",
+              "state": {},
+              "pinned": true
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 280.5
+  },
+  "active": "10260ffaddc0ca7a",
+  "lastOpenFiles": [
+    "99 - Config/Components/99 Life Progress.md",
+    "00 Homepage.md",
+    "99 - Config/Components/99 Quick Acess.md",
+    "99 - Config/Components/99 Tags.md",
+    "200 - Daily/D-2022-09-29.md",
+    "99 - Config/Components/99 Wolf Codex.md",
+    "400 - Tasks/Записать консультацию.md",
+    "400 - Tasks/Test2.md",
+    "100 - WorkSpace/Test.md",
+    "400 - Tasks/Test.md"
+  ]
+}
