@@ -29,22 +29,10 @@ labelFormat: LINK_LABEL_FORMAT,
 
 ## 📕 Задачи
 <%*
-try {
-const prevDayLink = moment().add(-1, 'days').format(format)
-const prevDayContent = await tp.file.include(`[[${folderPath}/${prevDayLink}]]`)
+const tasks = await tp.user.get_prev_day_tasks(tp.file.title, tp.file.include)
 
-const UNCOMPLETED_TASK_REGEX = /\[[>\/\s]\]/i
-
-const filtredTasks = prevDayContent.split('\n').filter(item => UNCOMPLETED_TASK_REGEX.test(item))
-
-for (const task of filtredTasks) {
-const formattedTask = `${task.replace(UNCOMPLETED_TASK_REGEX, '[ ]')}\n`
-
-tR += formattedTask
-}
-
-} catch (error) {
-// nothing to do
+for(let task of tasks){
+tR += task
 }
 %>
 ## 📘 События

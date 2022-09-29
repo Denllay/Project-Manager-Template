@@ -1,7 +1,10 @@
 <%*
-const { Config } = customJS
+const { Config, Utils } = customJS
 
-const { format, folderPath } = Config.getConfig().monthly
+const config = Config.getConfig()
+const {weekly, monthly} = config
+
+const { format, folderPath } = monthly
 const TITLE_LABEL_FORMAT = "MMMM YYYY"
 const LINK_LABEL_FROMAT = "YYYY-MM"
 
@@ -32,7 +35,31 @@ labelFormat: LINK_LABEL_FROMAT,
 ## 📒 Рефлексия прошлого месяца
 
 ---
+<%*
 
-```dataviewjs
-dv.view('Scripts/dataview/month_weeks')
-```
+const LABEL_FORMAT = "WW [Неделя]";
+
+const currentMonth = moment(tp.file.title, format);
+const startMonth = currentMonth.month();
+
+const weeksLinks = new Set();
+
+while (currentMonth.month() === startMonth) {
+const week = currentMonth.isoWeek().toString().padStart(2, "0");
+const currentWeekDate = moment(`${currentMonth.year()}-${week}`, "YYYY-WW");
+
+const weekLink = Utils.generateLink({
+path: currentWeekDate.format(weekly.format),
+label: currentWeekDate.format(LABEL_FORMAT),
+folder: weekly.folderPath,
+});
+
+weeksLinks.add(weekLink);
+
+currentMonth.add(1, "day");
+}
+
+for (const weekLink of weeksLinks) {
+tR += `## ${weekLink}\n`
+}
+%>

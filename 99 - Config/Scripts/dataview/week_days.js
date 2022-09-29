@@ -5,7 +5,11 @@ const { format, folderPath } = daily;
 
 const container = dv.container.createEl("div");
 
-const getWeekDays = (isoWeekNum = "01", year = moment().year()) => {
+const getWeekDays = (isoWeekNum, year) => {
+  if (!isoWeekNum || !year) {
+    return [];
+  }
+
   const daysList = [];
   const day = moment(`${year}W${isoWeekNum}`).locale("ru");
 

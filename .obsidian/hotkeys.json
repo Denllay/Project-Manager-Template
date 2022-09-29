@@ -96,5 +96,13 @@
       ],
       "key": "ArrowDown"
     }
+  ],
+  "templater-obsidian:99 - Config/Templates/99 Rollover Tasks.md": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "T"
+    }
   ]
 }

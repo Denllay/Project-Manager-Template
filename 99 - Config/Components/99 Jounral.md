@@ -1,10 +1,13 @@
-## 📘 Journal 
+## 📘 Journal
 
 ```dataviewjs
-dv.view('Scripts/dataview/journal_view', { 
-  query: `TABLE file.tasks from "200 - Daily" SORT file DESC`,
+const { Config } = customJS
+
+const config = Config.getConfig()
+
+dv.view('Scripts/dataview/journal_view', {
+  query: `TABLE file.tasks from "${config.daily.folderPath}" SORT file DESC`,
   limit: 150,
   headerSize: 2
 })
 ```
-

@@ -19,15 +19,15 @@
       "template": "99 - Config/Templates/99 Day Template.md"
     },
     {
-      "folder": "300 - Monthly",
+      "folder": "400 - Monthly",
       "template": "99 - Config/Templates/99 Month Template.md"
     },
     {
-      "folder": "200 - Weekly",
+      "folder": "300 - Weekly",
       "template": "99 - Config/Templates/99 Week Template.md"
     },
     {
-      "folder": "400 - Tasks",
+      "folder": "500 - Tasks",
       "template": "99 - Config/Templates/99 Task Template.md"
     }
   ],
@@ -36,7 +36,8 @@
     "99 - Config/Templates/99 Day Template.md",
     "99 - Config/Templates/99 Month Template.md",
     "99 - Config/Templates/99 Week Template.md",
-    "99 - Config/Templates/99 Task Template.md"
+    "99 - Config/Templates/99 Task Template.md",
+    "99 - Config/Templates/99 Rollover Tasks.md"
   ],
   "startup_templates": [],
   "enable_ribbon_icon": true

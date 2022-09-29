@@ -1,10 +1,10 @@
 {
   "livePreview": true,
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "500 - Files",
+  "attachmentFolderPath": "600 - Files",
   "promptDelete": false,
   "trashOption": "local",
   "newFileLocation": "folder",
-  "newFileFolderPath": "400 - Tasks",
+  "newFileFolderPath": "500 - Tasks",
   "defaultViewMode": "preview"
 }

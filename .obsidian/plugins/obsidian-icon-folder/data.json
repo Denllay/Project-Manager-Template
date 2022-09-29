@@ -22,9 +22,5 @@
   },
   "99 - Config": "MdSettings2",
   "100 - WorkSpace": "MdBriefcaseOutline",
-  "200 - Daily": "MdBookOpenBlankVariant",
-  "200 - Weekly": "MdBookOutline",
-  "300 - Monthly": "MdCalendarMonth",
-  "500 - Files": "MdFolderOpenOutline",
-  "400 - Tasks": "MdBookEditOutline"
+  "200 - Daily": "MdBookOpenBlankVariant"
 }

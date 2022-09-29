@@ -11,13 +11,13 @@
   "weekly": {
     "format": "[W]-YYYY-W",
     "template": "99 - Config/Templates/99 Week Template.md",
-    "folder": "200 - Weekly",
+    "folder": "300 - Weekly",
     "enabled": true
   },
   "monthly": {
     "format": "[M]-YYYY-MM",
     "template": "99 - Config/Templates/99 Month Template.md",
-    "folder": "300 - Monthly",
+    "folder": "400 - Monthly",
     "enabled": true
   },
   "quarterly": {
