@@ -5,7 +5,11 @@
     "journal",
     "tags",
     "kanban",
-    "quick_acess"
+    "quick_acess",
+    "year_progress",
+    "goal",
+    "tasks",
+    "clean-embeds"
   ],
-  "baseFontSize": 15.5
+  "baseFontSize": 16
 }

@@ -7,7 +7,7 @@ const { format, folderPath } = weekly
 const TITLE_LABEL_FORMAT = 'D MMMM, W [Неделя] YYYY [Года]'
 const LINK_LABEL_FORMAT = 'YYYY-W'
 
-const monthLink = tp.user.get_navigation_link(tp.file.title, format, 'Месяц', monthly.format, monthly.folderPath)
+const monthLink = tp.user.get_navigation_link(tp.file.title, format, 'MONTH', monthly.format, monthly.folderPath)
 const fileName = tp.user.get_formatted_date(TITLE_LABEL_FORMAT, tp.file.title, format)
 
 const [ prevWeekLink, nextWeekLink ] = tp.user.get_navigations_dates({  
@@ -16,30 +16,40 @@ referenceFormat: format,
 folderPath: folderPath,  
 pathFormat: format,  
 type: 'weeks',  
-labelFormat: LINK_LABEL_FORMAT,  
+labelFormat: null,  
+labels: ['↶ PREVIOUS WEEK', 'FOLLOWING WEEK ↷']
 }) 
-%>[[00 Homepage|Homepage]] / <% monthLink %>
+%>###### [[00 Homepage|HOMEPAGE]]  •  <% monthLink %>
+######  <% prevWeekLink %> ⁝ <% nextWeekLink %> 
 
-#### << <% prevWeekLink %> | <% nextWeekLink %> >>
-
-## <% fileName %>
-
----
+# ◌ <% fileName %>
 
 ## 🌹 Что прошло хорошо на прошлой неделе?
 
+
 ## 🌵 Что я должен прекратить делать?
+
 
 ## 🌱 Что можно было бы улучшить?
 
+
 ## 🔋 Что придало мне энергии?
+
 
 ## 📉 Что истощило меня?
 
+
 ## 📒 Рефлексия прошлой недели
 
----
 
-```dataviewjs
-dv.view('Scripts/dataview/week_days')
+## 📕 Задачи
+- [ ] 
+
+## 📜 Выполенные задачи
+
+```tasks
+has done date
+done after <% moment(tp.file.title, format).format("YYYY-MM-DD") %> 
+done before <% moment(tp.file.title, format).add(1,'weeks').format("YYYY-MM-DD") %>
+group by done
 ```

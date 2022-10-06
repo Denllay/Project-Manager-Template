@@ -4,11 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "10260ffaddc0ca7a",
+        "id": "d90d25a4b3d10aa7",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "99 - Config/Templates/99 Goal Template.md",
+            "mode": "preview",
+            "backlinks": false,
+            "source": false
+          }
         }
       }
     ],
@@ -21,20 +26,13 @@
       {
         "id": "94711c57085f07d6",
         "type": "tabs",
+        "dimension": 51.07843137254902,
         "children": [
           {
-            "id": "d97612461296df7b",
+            "id": "ef0e47e99dfb34ef",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
-            }
-          },
-          {
-            "id": "85df5dbfe6a375bd",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
               "state": {}
             }
           },
@@ -52,7 +50,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#retro/S",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,6 +64,7 @@
       {
         "id": "7b7b48901f92390d",
         "type": "tabs",
+        "dimension": 48.92156862745098,
         "children": [
           {
             "id": "6fccd09c7bd94770",
@@ -76,6 +75,7 @@
               "state": {
                 "file": "99 - Config/Components/99 Quick Acess.md",
                 "mode": "preview",
+                "backlinks": false,
                 "source": false
               },
               "pinned": true
@@ -85,7 +85,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253
+    "width": 307
   },
   "right": {
     "id": "3304353cb4989d92",
@@ -97,64 +97,23 @@
         "dimension": 47.362385321100916,
         "children": [
           {
-            "id": "857909d68da2197c",
+            "id": "c035b58f4f301080",
             "type": "leaf",
             "state": {
-              "type": "calendar",
-              "state": {}
+              "type": "outline",
+              "state": {
+                "file": "99 - Config/Templates/99 Goal Template.md"
+              }
             }
           },
           {
-            "id": "b323894aff6547ea",
-            "type": "leaf",
-            "state": {
-              "type": "recent-files",
-              "state": {}
-            }
-          },
-          {
-            "id": "566ceaffbfd6af81",
+            "id": "30a25b8a041f65dd",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
-            }
-          },
-          {
-            "id": "c035b58f4f301080",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {}
-            }
-          },
-          {
-            "id": "99c8ef5f54a247c3",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "0794e7e7b5993783",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
               }
             }
           }
@@ -179,19 +138,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 280.5
+    "width": 239.5
   },
-  "active": "d97612461296df7b",
+  "active": "d90d25a4b3d10aa7",
   "lastOpenFiles": [
-    "200 - Daily/D-2022-09-30.md",
-    "99 - Config/Components/99 Quick Acess.md",
-    "200 - Daily/D-2022-09-29.md",
-    "99 - Config/Templates/99 Day Template.md",
-    "99 - Config/Components/99 Activity.md",
-    "99 - Config/Components/99 Greeting.md",
-    "99 - Config/Components/99 Jounral.md",
-    "99 - Config/Components/99 Life Progress.md",
-    "99 - Config/Components/99 Tags.md",
-    "99 - Config/Components/99 Wolf Codex.md"
+    "99 - Config/Templates/99 Kanban Template.md",
+    "99 - Config/Templates/99 Month Template.md",
+    "99 - Config/Templates/99 Project Template.md",
+    "99 - Config/Templates/99 Startap Template.md",
+    "99 - Config/Templates/99 Task Template.md",
+    "99 - Config/Templates/99 Week Template.md",
+    "600 - Tasks/2022-10-05 - Изучить английский до B1.md",
+    "600 - Tasks/Очень важные видео про продуктивность.md",
+    "200 - Projects/Project Понимание важных вещей.md",
+    "200 - Projects/Project Голос дьявола.md"
   ]
 }

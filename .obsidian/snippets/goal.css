@@ -1,0 +1,7 @@
+.goal_projects_list_header > span {
+  color: var(--text-muted) !important;
+}
+
+.goal_projects_list_header + div > ul {
+  margin: 0 !important;
+}

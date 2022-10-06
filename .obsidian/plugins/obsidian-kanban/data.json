@@ -1,21 +1,15 @@
 {
-  "new-note-folder": "400 - Tasks",
+  "new-note-folder": "600 - Tasks",
   "new-note-template": "99 - Config/Templates/99 Task Template.md",
   "new-card-insertion-method": "append",
   "tag-colors": [],
   "date-picker-week-start": 1,
   "hide-tags-in-title": true,
-  "show-checkboxes": false,
-  "hide-tags-display": true,
+  "show-checkboxes": true,
+  "hide-tags-display": false,
   "hide-date-in-title": true,
-  "metadata-keys": [
-    {
-      "metadataKey": "tags",
-      "label": "",
-      "shouldHideLabel": true,
-      "containsMarkdown": false
-    }
-  ],
+  "metadata-keys": [],
   "show-relative-date": true,
-  "hide-date-display": false
+  "hide-date-display": false,
+  "date-trigger": "📅"
 }

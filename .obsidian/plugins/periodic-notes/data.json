@@ -5,19 +5,19 @@
   "daily": {
     "format": "[D]-YYYY-MM-DD",
     "template": "99 - Config/Templates/99 Day Template.md",
-    "folder": "200 - Daily",
+    "folder": "300 - Daily",
     "enabled": true
   },
   "weekly": {
     "format": "[W]-YYYY-W",
     "template": "99 - Config/Templates/99 Week Template.md",
-    "folder": "300 - Weekly",
+    "folder": "400 - Weekly",
     "enabled": true
   },
   "monthly": {
     "format": "[M]-YYYY-MM",
     "template": "99 - Config/Templates/99 Month Template.md",
-    "folder": "400 - Monthly",
+    "folder": "500 - Monthly",
     "enabled": true
   },
   "quarterly": {

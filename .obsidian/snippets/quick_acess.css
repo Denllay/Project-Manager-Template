@@ -5,3 +5,7 @@
 .quick-acess-sub-header > span > h3 {
   margin: 5px 0 0 0 !important;
 }
+
+.quick_acess_periodic_list > span > ul {
+  padding-left: 1.4em;
+}

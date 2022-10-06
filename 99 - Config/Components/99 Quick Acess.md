@@ -1,6 +1,33 @@
----
-obsidianUIMode: preview
----
+```dataviewjs
+const { Utils, Config } = customJS
+
+const config = Config.getConfig()
+
+const { daily } = config
+
+ const prevDay = moment().add(-1, 'days')
+ const nextDay = moment().add(1, 'days')
+
+ const prevDayLink = Utils.generateLink({
+    path: prevDay.format(daily.format),
+    folder: daily.folderPath,
+    label: '↶ YESTERDAY'
+    })
+
+const nextDayLink = Utils.generateLink({
+    path: nextDay.format(daily.format),
+    folder: daily.folderPath,
+	label: 'TOMORROW ↷'
+    })
+
+    dv.span(`${prevDayLink} ⁝ ${nextDayLink}`)
+```
+
+## Dashboard
+
+- [[00 Homepage|💎 Homepage]]
+- [[00 Goals Board|🎯 Goals]]
+- [[00 Projects Board|📐 Projects]]
 
 ```dataviewjs
 const { Utils, Config } = customJS
@@ -11,9 +38,9 @@ const LABEL_FORMAT = 'YYYY-MM-DD'
 const getFileLink = (type)=>{
     const period = config[type]
     const lables = {
-        monthly: 'Месяц',
-        weekly: 'Неделя',
-        daily: 'День'
+        monthly: '📅 Monthly',
+        weekly: '📅 Weekly',
+        daily: '📅 Daily'
     }
 
     return Utils.generateLink({
@@ -23,31 +50,18 @@ const getFileLink = (type)=>{
     })
 }
 
- dv.span(`# [[00 Homepage|Homepage]]`, {cls: 'quick-acess-header'})
- dv.span(`### ${getFileLink('monthly')} / ${getFileLink('weekly')} / ${getFileLink('daily')}`)
+dv.span('## Periodic Overviews')
 
- const { daily } =config
+dv.span(dv.markdownList( [getFileLink('daily'), getFileLink('weekly'), getFileLink('monthly')]), {cls: 'quick_acess_periodic_list'})
 
- const prevDay = moment().add(-1, 'days')
- const nextDay = moment().add(1, 'days')
-
- const prevDayLink = Utils.generateLink({
-    path: prevDay.format(daily.format),
-    folder: daily.folderPath,
-    label: prevDay.format(LABEL_FORMAT)
-    })
-
-const nextDayLink = Utils.generateLink({
-    path: nextDay.format(daily.format),
-    folder: daily.folderPath,
-    label: nextDay.format(LABEL_FORMAT)
-    })
-
-    dv.span(`<< ${prevDayLink} | ${nextDayLink} >>`)
 ```
 
----
+## Tasks
 
-```dataviewjs
-dv.view('Scripts/dataview/active_tasks')
+```tasks
+group by filename
+due before tomorrow
+path includes 200 - Project
+hide task count
+not done
 ```

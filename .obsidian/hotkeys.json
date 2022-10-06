@@ -104,5 +104,46 @@
       ],
       "key": "T"
     }
+  ],
+  "quickadd:choice:da10c9fb-e2ee-4cba-bd27-85eacadec8f6": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "1"
+    }
+  ],
+  "quickadd:choice:3a9c0067-2602-47fc-84c9-250827df1247": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "2"
+    }
+  ],
+  "quickadd:choice:ea033939-eb0d-48e9-b7c4-04596cbba8ad": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "3"
+    }
+  ],
+  "periodic-notes:next-weekly-note": [],
+  "periodic-notes:open-weekly-note": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "4"
+    }
+  ],
+  "periodic-notes:open-monthly-note": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "5"
+    }
   ]
 }

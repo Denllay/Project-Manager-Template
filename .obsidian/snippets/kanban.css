@@ -1,11 +1,9 @@
-.kanban-plugin__meta-row {
-  background: transparent !important;
+.kanban-plugin__item-title-wrapper {
+  align-items: unset !important;
 }
-
-.kanban-plugin__meta-value-wrapper {
-  padding-left: 0 !important;
-}
-
 .tag.kanban-plugin__item-tag {
   margin: 0 5px 0 0 !important;
+}
+.kanban-plugin__item-prefix-button-wrapper input[type='checkbox'] {
+  margin: 2px 7px 4px 0 !important;
 }

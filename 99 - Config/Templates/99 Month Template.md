@@ -16,25 +16,31 @@ referenceFormat: format,
 folderPath: folderPath,  
 pathFormat: format,  
 type: 'months',  
-labelFormat: LINK_LABEL_FROMAT,  
+labelFormat: null,
+labels: ['↶ PREVIOUS MONTH', 'FOLLOWING MONTH ↷']
 })
-%>[[00 Homepage|Homepage]]
+%>###### [[00 Homepage|HOMEPAGE]]
+###### <% prevMonthLink %> ⁝ <% nextMonthLink %> 
 
-#### << <% prevMonthLink %> | <% nextMonthLink %> >>
+# ◌ <% fileName %>
+ 
+## 📐 Проекты
 
-## <% fileName %>
-
----
-
-## 💼 Проекты
 
 ## 📕 Обучение
 
+
 ## 📚 Список чтения
+
 
 ## 📒 Рефлексия прошлого месяца
 
----
+
+## 📕 Задачи
+- [ ] 
+
+## 📘 Недели
+
 <%*
 
 const LABEL_FORMAT = "WW [Неделя]";
@@ -60,6 +66,6 @@ currentMonth.add(1, "day");
 }
 
 for (const weekLink of weeksLinks) {
-tR += `## ${weekLink}\n`
+tR += `- ${weekLink}\n`
 }
 %>

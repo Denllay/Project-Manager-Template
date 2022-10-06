@@ -1,0 +1,283 @@
+{
+  "choices": [
+    {
+      "id": "da10c9fb-e2ee-4cba-bd27-85eacadec8f6",
+      "name": "Add Goal",
+      "type": "Macro",
+      "command": true,
+      "macroId": "e9c08be2-22e6-4c90-9f29-5546435091a9"
+    },
+    {
+      "id": "ea033939-eb0d-48e9-b7c4-04596cbba8ad",
+      "name": "Add List Project",
+      "type": "Macro",
+      "command": true,
+      "macroId": "cb2eb311-0bf6-4b8a-907e-0a5c9e8972fb"
+    },
+    {
+      "id": "3a9c0067-2602-47fc-84c9-250827df1247",
+      "name": "Add Kanban Project",
+      "type": "Macro",
+      "command": true,
+      "macroId": "e1be2741-2d8b-4996-b372-641e6e556b3a"
+    }
+  ],
+  "macros": [
+    {
+      "name": "Add Goal",
+      "id": "e9c08be2-22e6-4c90-9f29-5546435091a9",
+      "commands": [
+        {
+          "name": "Create goal note",
+          "type": "NestedChoice",
+          "id": "7f8b2235-bfe5-469b-9f57-31f553af3cac",
+          "choice": {
+            "id": "635af62d-f2ba-4668-99ee-cb4035d00e94",
+            "name": "Create goal note",
+            "type": "Template",
+            "command": false,
+            "templatePath": "99 - Config/Templates/99 Goal Template",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{DATE}} - {{VALUE:🎯 Add Goal}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "100 - Goals"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false
+            },
+            "appendLink": false,
+            "incrementFileName": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default"
+          }
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "651b81b4-01d3-4fa2-b9ce-2306cba84691",
+          "time": 200
+        },
+        {
+          "name": "Send to Kanban Board",
+          "type": "NestedChoice",
+          "id": "283e4973-d3bf-447c-aaa7-e35a2f7e1508",
+          "choice": {
+            "id": "50eff058-c58f-43d4-b37b-425854d0d700",
+            "name": "Send to Kanban Board",
+            "type": "Capture",
+            "command": false,
+            "appendLink": false,
+            "captureTo": "00 Goals Board.md",
+            "captureToActiveFile": false,
+            "createFileIfItDoesntExist": {
+              "enabled": false,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "[[{{DATE}} - {{VALUE:🎯 Add Goal}}|{{VALUE:🎯 Add Goal}}]]"
+            },
+            "insertAfter": {
+              "enabled": true,
+              "after": "## {{VALUE:Professional,Health,Knowledge,Social,Mental,Other}}",
+              "insertAtEnd": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "prepend": false,
+            "task": true,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default"
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Add List Project",
+      "id": "cb2eb311-0bf6-4b8a-907e-0a5c9e8972fb",
+      "commands": [
+        {
+          "name": "Create Project",
+          "type": "NestedChoice",
+          "id": "53dad081-3c58-4ec1-b47f-b26c944b2f0e",
+          "choice": {
+            "id": "31592b18-7b77-4cca-be1e-85f82855b72e",
+            "name": "Create Project",
+            "type": "Template",
+            "command": false,
+            "templatePath": "99 - Config/Templates/99 Project Template",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "Project {{VALUE:⚒ Add List Project}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "200 - Projects"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false
+            },
+            "appendLink": false,
+            "incrementFileName": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default"
+          }
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "4c7f35b8-e079-410d-a7a2-58eacb52b7e9",
+          "time": 200
+        },
+        {
+          "name": "Send To Project Board",
+          "type": "NestedChoice",
+          "id": "99c2dee7-6f3c-4760-be5d-7486db8ba5b1",
+          "choice": {
+            "id": "f9a2aac5-0faa-4d7a-a59f-1ae1c1c831a1",
+            "name": "Send To Project Board",
+            "type": "Capture",
+            "command": false,
+            "appendLink": false,
+            "captureTo": "00 Projects Board.md",
+            "captureToActiveFile": false,
+            "createFileIfItDoesntExist": {
+              "enabled": false,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "[[Project {{VALUE:⚒ Add List Project}}|{{VALUE:⚒ Add List Project}}]] {{VALUE: Priority}}"
+            },
+            "insertAfter": {
+              "enabled": true,
+              "after": "## Todo",
+              "insertAtEnd": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "prepend": false,
+            "task": true,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default"
+          }
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "Add kanban",
+      "id": "e1be2741-2d8b-4996-b372-641e6e556b3a",
+      "commands": [
+        {
+          "name": "Create kanban",
+          "type": "NestedChoice",
+          "id": "d69283bc-1ba8-4c98-b4c8-b2c401bf42b0",
+          "choice": {
+            "id": "ef80e273-8986-444c-8303-d9e8deca80f5",
+            "name": "Create kanban",
+            "type": "Template",
+            "command": false,
+            "templatePath": "99 - Config/Templates/99 Kanban Template.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "Project {{VALUE:⚒ Add Project}}"
+            },
+            "folder": {
+              "enabled": true,
+              "folders": [
+                "200 - Projects"
+              ],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false
+            },
+            "appendLink": false,
+            "incrementFileName": false,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": true,
+            "openFileInMode": "default"
+          }
+        },
+        {
+          "name": "Wait",
+          "type": "Wait",
+          "id": "cf03d4d3-4402-410c-af1d-ae0c9b7cb486",
+          "time": 200
+        },
+        {
+          "name": "Add to Project Board",
+          "type": "NestedChoice",
+          "id": "13e8dce0-06ab-49ee-9feb-6d1f55eb292a",
+          "choice": {
+            "id": "322da83c-fbc0-4bde-82a2-558a7ee2d3f6",
+            "name": "Add to Project Board",
+            "type": "Capture",
+            "command": false,
+            "appendLink": false,
+            "captureTo": "00 Projects Board.md",
+            "captureToActiveFile": false,
+            "createFileIfItDoesntExist": {
+              "enabled": false,
+              "createWithTemplate": false,
+              "template": ""
+            },
+            "format": {
+              "enabled": true,
+              "format": "[[Project {{VALUE:⚒ Add Project}}|{{VALUE:⚒ Add Project}}]] {{VALUE: Priority}}"
+            },
+            "insertAfter": {
+              "enabled": true,
+              "after": "## Todo",
+              "insertAtEnd": false,
+              "createIfNotFound": false,
+              "createIfNotFoundLocation": "top"
+            },
+            "prepend": false,
+            "task": true,
+            "openFileInNewTab": {
+              "enabled": false,
+              "direction": "vertical",
+              "focus": true
+            },
+            "openFile": false,
+            "openFileInMode": "default"
+          }
+        }
+      ],
+      "runOnStartup": false
+    }
+  ],
+  "inputPrompt": "single-line"
+}
