@@ -1,7 +1,5 @@
 # Life Manager
 
-## Homepage
-![image](https://user-images.githubusercontent.com/75447714/194192772-189292d5-51a2-4764-908f-490deabb67b3.png)
 ## Goals Board
 ![image](https://user-images.githubusercontent.com/75447714/194194170-1d6676ac-c71e-4b4c-b125-bd50505eab0c.png)
 ## Projects Board
